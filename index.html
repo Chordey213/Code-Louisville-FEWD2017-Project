@@ -2,7 +2,8 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <!-- <title>Anderson Park | HOA</title> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Anderson Park | HOA</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link href="https://fonts.googleapis.com/css?family=Tangerine" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
@@ -69,37 +70,7 @@
             </div> <!-- End Style Div -->
             </div> <!--End Slideshow-container -->
           </div> <!-- End of SLideMom -->
-          <br>
 
-
-          <script>
-          var slideIndex = 1;
-          showSlides(slideIndex);
-
-          function plusSlides(n) {
-            showSlides(slideIndex += n);
-          }
-
-          function currentSlide(n) {
-            showSlides(slideIndex = n);
-          }
-
-          function showSlides(n) {
-            var i;
-            var slides = document.getElementsByClassName("mySlides");
-            var dots = document.getElementsByClassName("dot");
-            if (n > slides.length) {slideIndex = 1}
-            if (n < 1) {slideIndex = slides.length}
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-            }
-            slides[slideIndex-1].style.display = "block";
-            dots[slideIndex-1].className += " active";
-          }
-</script>
           <div class="main-header"></div>
             <section>
                 <div class="links">
@@ -120,26 +91,14 @@
             </section>
             <section>
               <div id="body">
-                <div class="secondary-content group">
-                  <div class="events">
-                    <p> Upcoming Events :
-                        <li class="UCE"> A.</li>
-                        <li class="UCE"> B.</li>
-                        <li class="UCE"> C.</li>
-                        <li class="UCE"> D.</li>
-                        <li class="UCE"> E.</li>
-                        <li class="UCE"> F.</li>
-                    </p>
-                  </div>
                   <div class="intro">
                     <a id="welcome">Welcome to Anderson Park</a>
                     <p> This section is reserved for a brief overview of the Home Owner's Association.
                         Here you may give an introductory statement to the Neighborhood, the Board of Director's
                         or any other pertinant information you feel is relevant to the Home Owner's Association.
                     </p>
-                  </div>
-                </div>
-              </div>
+                  </div> <!-- Intro Class -->
+                </div> <!-- Body ID -->
             </div> <!-- Container ID -->
             </section>
             <section>
@@ -149,5 +108,6 @@
               </footer>
             </div>
             </section>
+            <script src="Javascript/apps.js"></script>
         </body>
 </html>
