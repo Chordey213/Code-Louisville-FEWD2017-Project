@@ -1,6 +1,6 @@
-/**************
-     Phot slideshow
-***************/
+/********************
+   Photo slideshow
+*********************/
 .slideMom {
   Background-color:  #4fcf40;
 }
@@ -175,7 +175,7 @@ h1, h2 {
 /**************
   NAVIGATION
 ***************/
-
+/*Navigation above Javascript Carousel*/
 .top-nav {
   list-style: none;
   margin: 0 10px;
@@ -249,7 +249,6 @@ body {
 }
 
 #container {
-   /*min-height:100%;*/
    position:relative;
 }
 
@@ -276,7 +275,9 @@ body {
   font-family: 'Tangerine', cursive, sans-serif;
   color: silver;
 }
-
+/**********************
+  Property Management
+**********************/
 #mgmt {
   text-align: center;
   font-family: 'Open Sans', sans-serif;
@@ -292,7 +293,7 @@ body {
     color: silver;
     margin: 45px 0 0 0;
 }
-
+/*Property Manager */
 .mngr {
   text-align: center;
   font-size: 4.5em;
@@ -300,7 +301,7 @@ body {
   color: silver;
   margin: 30px 0 0 0;
 }
-
+/*Property tabs*/
 .name {
   text-align: center;
   font-size: 1.5em;
@@ -326,7 +327,9 @@ body {
   margin: 0 15px 0 0;
 }
 
-
+/**************
+  ABOUT PAGE
+***************/
 .about {
   text-align: center;
   font-size: 2.5em;
@@ -342,7 +345,9 @@ body {
   font-family: 'Tangerine', cursive, sans-serif;
   color: #636262;
 }
-
+/**************
+  SUPPORT PAGE
+***************/
 #support {
   text-align: center;
   font-size: 3.5em;
@@ -350,14 +355,23 @@ body {
 
 #phone {
   text-align: center;
-  margin-bottom: 15px;
-}
+  margin: 15px 0;
+  }
 
 #email {
   text-align: center;
   margin-bottom: 30px;
+  padding-top: 30px;
 }
 
+.email {
+  width: 5% ;
+  height: 5% ;
+}
+
+/**************
+  DIRECTORS
+***************/
 #directors {
   margin: 10px 0 0 0;
   padding: 0;
@@ -394,7 +408,6 @@ body {
   float: left;
   width: 45%;
   margin: 2.5%;
-  /* background-color: #f5f5f5; */
   color: #bdc3c7;
 }
 
@@ -451,10 +464,39 @@ body {
 
 @Media screen and (max-width: 780px) {
   .slideMom{display: none;}
-  .main-header{
+  .links{display:none;}
+  .about{
+    text-align: center;
+    font-size: .75em;
+    font-family: sans-serif;
+    color: black;
+    padding: 0 5px;
+    margin: 7px;
+  }
+  #about {
+    text-align: center;
+    font-size: 2.25em;
+    font-family: 'Tangerine', cursive, sans-serif;
+    color: #636262;
+    padding: auto;
+  }
+  #support {
+    text-align: center;
+    font-size: 2.25em;
+  }
+  #phone {
     display:flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
+    text-align: center;
+    margin: auto;
+  }
+  #email {
+    text-align: center;
+    margin: auto;
+    padding-top: 30px;
+  }
+  .email {
+    width: 25% ;
+    height: 25% ;
   }
 }
